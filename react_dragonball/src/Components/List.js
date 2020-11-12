@@ -1,12 +1,4 @@
-import React from 'react';
-import './App.css';
-import {human} from "./utils/human";
-
-
-const sortByPower = (a, b) => {
-    return b.power - a.power;
-}
-
+import React from "react";
 
 const List = props => {
     return (
@@ -28,15 +20,4 @@ const List = props => {
         </>
     );
 }
-
-
-const App =() =>  {
-    return(
-        <div className="App">
-            <List data ={human} />
-        </div>
-    );
-}
-
-
-export default App;
+export default List;
